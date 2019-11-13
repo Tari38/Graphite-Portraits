@@ -1,0 +1,418 @@
+/*----------------------- Font Styles ------------------------- */
+
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Open Sans', sans-serif; */
+
+/*------------------------ Colors ----------------------------- */
+
+/* #060324, #11132e, #1c1d38, #272742, #32324d, #323250, #323253, #323256, #272752, #1b1c4e, #0d1149, #000244, #f2eee5, #f9f1ed, #fcf5f5, #fdfafc, #ffffff); */
+
+/*------------------------ Main Styles ------------------------ */
+
+body {
+	margin-top: 100px;
+	margin-bottom: 0;
+	background-color: #060324;
+	background-image: radial-gradient(circle, #060324, #11132e, #1c1d38, #272742, #32324d, #323250, #323253, #323256, #272752, #1b1c4e, #0d1149, #000244);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.navbar {
+	background-color: #fdfafc;
+	font-family: 'Courgette', cursive;
+	font-size: 1.25rem;
+}
+
+.navbar-brand {
+	font-family: 'Great Vibes', cursive;
+	font-weight: bolder;
+	font-size: 2rem;
+	border-style: double;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: #141725;
+	padding: 5px;
+}
+
+/*------------------------- Link Styles --------------------------*/
+
+a {
+	color: #060324;
+}
+a:hover {
+	color: #1b1c4e;
+}
+
+/* ------------------------ Header & P Styles ------------------- */
+
+h1, h2, h4, h5 {
+	font-family: 'Courgette', cursive;
+  color: #D2D4DB;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #D2D4DB;
+}
+
+
+/*------------------------ Home Page Styles ------------------------ */
+#slider, #carousel-bounding-box {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.carousel-control {
+    padding-top: 10px;
+    color: #9FA0A4;
+}
+.carousel-control:hover {
+  color: #1b1c4e;
+}
+.carousel-item {
+align-items: center;
+}
+.item {
+	max-width: 500px;
+	max-height: 700px;
+	border: 5px double #9FA0A4;
+	border-radius: 5px;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+/*------------------------ About Page Styles ------------------------ */
+
+.profileImg {
+	background-image: url("/images/samantha-profile.jpg");
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	border-style: double;
+	border-width: 5px;
+	border-color: #9FA0A4;
+	margin-bottom: 10px;
+}
+.icon {
+	height: 20px;
+	width: 20px;
+	background-color: #9FA0A4;
+	border-style: solid;
+	border-color: #1b1c4e;
+	border-radius: 50px;
+	position: relative;
+}
+.spanAbout {
+	color: #060324;
+	cursor: pointer;
+}
+.spanAbout:hover {
+	color: #272752;
+}
+
+/*------------------------- Pricing Page Styles -------------------------*/
+
+.priceList, .priceInfo, .aboutInfo, .contactMe {
+	border-style: double;
+	border-width: 5px;
+	border-radius: 5px;
+	border-color: #9FA0A4;
+	padding: 20px;
+}
+
+/*------------------------- Gallery Page styles ------------------------*/
+.goBack {
+	text-align: left;
+}
+
+.container-top {
+	display: block;
+}
+
+hr {
+	background-color: #D2D4DB;
+	border-style: groove;
+	width: 95%;
+	height: 1px;
+
+}
+.col-container {
+	display: flex;
+	width: 100%;
+}
+.col {
+	flex: 1;
+	padding: 10px;
+	border-style: groove;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: #11132e;
+	box-shadow: 2px 3px;
+}
+
+.card-title, .card-text {
+	background-color: inherit;
+	color: #D2D4DB;
+}
+
+.collapseArt {
+	display: flex;
+	border-style: groove;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: #11132e;
+	box-shadow: 2px 3px;
+}
+
+/*------------------------- Contact Page Styles -------------------------*/
+.contact1 {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	background-image: radial-gradient(circle, #060324, #11132e, #1c1d38, #272742, #32324d, #323250, #323253, #323256, #272752, #1b1c4e, #0d1149, #000244);
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-contact1 {
+	width: 1200px;
+	background-color: #D2D4DB;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 90px 130px 90px 150px;
+}
+.contact-pic {
+	width: 300px;
+}
+
+.contactForm {
+	width: 390px;
+}
+
+.contact1-form-title {
+	display: block;
+	font-family: 'Courgette', cursive;
+	font-size: 24px;
+	color: #1b1c4e;
+	line-height: 1.2;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+input.input-control {
+  height: 50px;
+	border-radius: 10px;
+	padding: 0 30px;
+}
+
+textarea.input-control {
+	min-height: 150px;
+	border-radius: 10px;
+	padding: 10px 30px;
+}
+
+.wrap-form-group {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	margin-bottom: 20px;
+}
+
+.input {
+	display: block;
+	width: 100%;
+	background: #e6e6e6;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #666666;
+}
+
+.container-btn-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btn-form {
+	background-color: #1b1c4e;
+}
+
+.shadow-input {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: #1b1c4e;
+}
+.input:focus + .shadow-input {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 80px 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 80px 30px;
+    opacity: 0;
+  }
+}
+
+/* --------------------- Validate ------------------------------------ */
+
+.validate-input {
+	position: relative;
+}
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: white;
+  border: 1px solid #c80000;
+  border-radius: 12px;
+  padding: 5px 20px 5px 10px;
+  top: 50%;
+	transform: translateY(-50%);
+	right: 7px;
+	pointer-events: none;
+
+	color: #c80000;
+	font-size: 12px;
+	line-height: 1.4;
+	text-align: left;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+	content: "\f06a";
+	display: block;
+	position: absolute;
+	color: #c80000;
+	font-size: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 13px;
+}
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* -------------------Contact Send or Error Styles -----------------------*/
+
+.contact-container-fluid {
+	font-size: 2rem;
+	font-family: 'Courgette', cursive;
+	color: #fdfafc;
+}
+.contact-row {
+	font-family: 'Open Sans', sans-serif;
+	color: #fdfafc;
+}
+.jumbotron-fluid {
+	width: 100%;
+	background-color: transparent;
+	border-top: 2px double;
+	border-bottom: 2px double;
+}
+
+/*-------------------------- Footer Styles ---------------------------*/
+
+.jumbotron {
+	margin-top: 20px;
+	margin-bottom: 0;
+	height: 50px;
+	width: 100%;
+	background-color: #fdfafc;
+}
+.footer {
+	width: 100%;
+	background-color: transparent;
+	margin: 0;
+}
+.copyright, h6 {
+	color: black 0.75;
+	text-align: center;
+}
+
+
+/*----------------------------- Responsive ---------------------*/
+
+@media (max-width: 1200px) {
+  .contact-pic {
+    width: 33.5%;
+  }
+
+  .contactForm {
+    width: 44%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-contact1 {
+    padding: 90px 80px 88px 90px;
+  }
+
+  .contact-pic {
+    width: 35%;
+  }
+
+  .contactForm {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-contact1 {
+    padding: 90px 80px 88px 80px;
+  }
+
+  .contact-pic {
+    display: none;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-contact1 {
+    padding: 90px 15px 88px 15px;
+  }
+}

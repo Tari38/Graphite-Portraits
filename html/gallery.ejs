@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <body>
+        <% include ./include/nav %>
+
+<div class="container-top">
+  <div>
+    <h1>Main Gallery</h1>
+      <p>Welcome to the main gallery. You can view all my artwork here.</p>
+      <p>All my pieces are made using graphite and/or coloured pencils.</p>
+  </div>
+</div>
+<hr />
+<div class="col-container">
+    <div class="col">
+        <img class="card-img-top img-fluid" src="/images/dogs/English-Setter.png" alt="English Setter">
+            <div class="card-body">
+                <h2 class="card-title">Pet Dogs</h2>
+                <p class="card-text">The Dog Collection</p>
+            </div>
+        <div class="accordion" id="accordionDog">
+          <div class="card">
+            <div class="card-header" id="headingDog">
+              <h5 class="mb=0">
+              <form action="/dogs" method="GET">
+                <button class="btn btn-link" type="submit" data-toggle="collapse" data-target="collapseArt" aria-expanded="true" aria-controls="collapseArt"> Show More </button>
+              </form>
+              </h5>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <img class="card-img-top img-fluid" src="/images/bigCats/father-and-son.jpg" alt="Father & Son">
+            <div class="card-body">
+                <h2 class="card-title">Big Cats</h2>
+                <p class="card-text">The Big Cat Collection</p>
+            </div>
+            <div class="accordion" id="accordionBigCats">
+              <div class="card">
+                <div class="card-header" id="headingBigCats">
+                  <h5 class="mb=0">
+                    <form action="/bigCats" method="GET">
+                      <button class="btn btn-link" type="submit" data-toggle="collapse" data-target="collapseArt" aria-expanded="true" aria-controls="collapseArt">Show More</button>
+                    </form>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <div class="col">
+        <img class="card-img-top img-fluid" src="/images/cats/commission-kittens.jpg" alt="Kittens">
+            <div class="card-body">
+                <h2 class="card-title">Pet Cats</h2>
+                <p class="card-text">The Cat Collection</p>
+            </div>
+            <div class="accordion" id="accordionCats">
+              <div class="card">
+                <div class="card-header" id="headingCats">
+                  <h5 class="mb=0">
+                    <form action="/cats" method="GET">
+                      <button class="btn btn-link" type="submit" data-toggle="collapse" data-target="collapseArt" aria-expanded="true" aria-controls="collapseArt">Show More</button>
+                    </form>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    </div>
+</div>
+<div class="col-container">
+    <div class="col">
+        <img class="card-img-top img-fluid" src="/images/birdsOfPrey/birds-of-prey-british-buzzard.png" alt="British Buzzard">
+            <div class="card-body">
+                <h2 class="card-title">Birds of Prey</h2>
+                <p class="card-text">The Birds of Prey Collection</p>
+            </div>
+            <div class="accordion" id="accordionBOPrey">
+              <div class="card">
+                <div class="card-header" id="headingBOPrey">
+                  <h5 class="mb=0">
+                    <form action="/birdsOfPrey" method="GET">
+                      <button class="btn btn-link" type="submit" data-toggle="collapse" data-target="collapseArt" aria-expanded="true" aria-controls="collapseArt">Show More</button>
+                    </form>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    </div>
+    <div class="col">
+        <img class="card-img-top img-fluid" src="/images/horses/commission-horse-gallop.jpg" alt="Galloping Horse">
+            <div class="card-body">
+                <h2 class="card-title">Horses</h2>
+                <p class="card-text">The Horse Collection</p>
+            </div>
+            <div class="accordion" id="accordionHorses">
+              <div class="card">
+                <div class="card-header" id="headingHorses">
+                  <h5 class="mb=0">
+                    <form action="/horses" method="GET">
+                      <button class="btn btn-link" type="submit" data-toggle="collapse" data-target="collapseArt" aria-expanded="true" aria-controls="collapseArt">Show More</button>
+                    </form>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    </div>
+    <div class="col">
+        <img class="card-img-top img-fluid" src="/images/wildAnimals/zebras.jpg" alt="Zebras">
+            <div class="card-body">
+                <h2 class="card-title">Wild Animals</h2>
+                <p class="card-text">The Wild Animal Collection</p>
+            </div>
+            <div class="accordion" id="accordionWild">
+              <div class="card">
+                <div class="card-header" id="headingWild">
+                  <h5 class="mb=0">
+                    <form action="/wildAnimals" method="GET">
+                      <button class="btn btn-link" type="submit" data-toggle="collapse" data-target="collapseArt" aria-expanded="true" aria-controls="collapseArt">Show More</button>
+                    </form>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    </div>
+</div>
+<div class="col-container">
+    <div class="col">
+        <img class="card-img-top img-fluid" src="/images/britishBirds/british-birds-the-raven.jpg" alt="Raven">
+            <div class="card-body">
+              <h2 class="card-title">British Birds</h2>
+              <p class="card-text">The British Birds Collection</p>
+            </div>
+            <div class="accordion" id="accordionBritBirds">
+              <div class="card">
+                <div class="card-header" id="headingBritBirds">
+                  <h5 class="mb=0">
+                    <form action="/britishBirds" method="GET">
+                      <button class="btn btn-link" type="submit" data-toggle="collapse" data-target="collapseArt" aria-expanded="true" aria-controls="collapseArt">Show More</button>
+                    </form>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    </div>
+      <div class="col">
+          <img class="card-img-top img-fluid" src="" alt="">
+              <div class="card-body">
+                <h2 class="card-title"></h2>
+                <p class="card-text"></p>
+              </div>
+        </div>
+        <div class="col">
+            <img class="card-img-top img-fluid" src="" alt="">
+                <div class="card-body">
+                  <h2 class="card-title"></h2>
+                  <p class="card-text"></p>
+                </div>
+          </div>
+
+</div>
+<% include ./include/scripts %>
+        <% include ./include/footer %>
+</body>
+</html>

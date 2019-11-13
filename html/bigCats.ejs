@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <body>
+        <% include ./include/nav %>
+
+<form class="goBack" action="/gallery" method="GET">
+  <button class="btn btn-link btn-transparent" type="submit" name="button">Go Back</button>
+</form><br>
+<h1>The Big Cats Gallery</h1>
+
+<div class="col-container">
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/bigCats/zion-the-lion.jpg" alt="Zion">
+    <div class="card-body">
+      <h2 class="card-title">Zion</h2>
+      <p class="card-text">Graphite on A3 of Zion the Lion.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/bigCats/cheetah-snarl.jpg" alt="Cheetah Snarl">
+    <div class="card-body">
+      <h2 class="card-title">Snarl</h2>
+      <p class="card-text">Graphite on A3 of a snarling cheetah.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/bigCats/abu-the-tiger.jpg" alt="White Tiger">
+    <div class="card-body">
+      <h2 class="card-title">Abu</h2>
+      <p class="card-text">Graphite on A3 of Abu the White Tiger.</p>
+    </div>
+  </div>
+</div>
+<div class="col-container">
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/bigCats/father-and-son.jpg" alt="Two Lions">
+    <div class="card-body">
+      <h2 class="card-title">Father & Son</h2>
+      <p class="card-text">Graphite on A2 of two lions.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/bigCats/siberian-tigers.jpg" alt="Siberian Tigers">
+    <div class="card-body">
+      <h2 class="card-title">Siberian Tigers</h2>
+      <p class="card-text">Graphite on A2 of two tigers.</p>
+    </div>
+  </div>
+</div>
+
+
+        <% include ./include/scripts %>
+        <% include ./include/footer %>
+</body>
+</html>

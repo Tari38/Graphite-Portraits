@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <body>
+        <% include ./include/nav %>
+
+<form class="goBack" action="/gallery" method="GET">
+  <button class="btn btn-link btn-transparent" type="submit" name="button">Go Back</button>
+</form><br>
+
+<h1>The Wild Animal Gallery</h1>
+<hr>
+<div class="col-container">
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/wildAnimals/brown-bear.jpg" alt="Brown Bear">
+    <div class="card-body">
+      <h2 class="card-title">Brown Bear</h2>
+      <p class="card-text">Graphite sketch on A4 of a brown bear.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/wildAnimals/howling-wolf.jpg" alt="Wolf 1">
+    <div class="card-body">
+      <h2 class="card-title">Howling Wolf</h2>
+      <p class="card-text">Graphite on A3 of a howling wolf.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/wildAnimals/kudu.jpg" alt="Kudu">
+    <div class="card-body">
+      <h2 class="card-title">Kudu</h2>
+      <p class="card-text">Graphite on A4 of a Kudu.</p>
+    </div>
+  </div>
+</div>
+<div class="col-container">
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/wildAnimals/white-rhino.jpg" alt="White Rhino">
+    <div class="card-body">
+      <h2 class="card-title">White Rhino</h2>
+      <p class="card-text">Graphite on A3 of a White Rhino.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/wildAnimals/zebras.jpg" alt="Zebra">
+    <div class="card-body">
+      <h2 class="card-title">Zebra</h2>
+      <p class="card-text">Graphite on A3 of fighting zebra.</p>
+    </div>
+  </div>
+</div>
+<% include ./include/scripts %>
+        <% include ./include/footer %>
+</body>
+</html>

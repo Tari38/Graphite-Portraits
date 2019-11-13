@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <body>
+        <% include ./include/nav %>
+
+<form class="goBack" action="/gallery" method="GET">
+  <button class="btn btn-link btn-transparent" type="submit" name="button">Go Back</button>
+</form><br>
+
+<h1>The Birds of Prey Gallery</h1>
+<hr>
+<div class="col-container">
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/birdsOfPrey/birds-of-prey-british-buzzard.png" alt="British Buzzard">
+    <div class="card-body">
+      <h2 class="card-title">British Buzzard</h2>
+      <p class="card-text">Graphite on A3 of a British Buzzard.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/birdsOfPrey/birds-of-prey-european-eagle-owl.jpg" alt="European Eagle Owl">
+    <div class="card-body">
+      <h2 class="card-title">European Eagle Owl</h2>
+      <p class="card-text">Graphite on A3 of a European Eagle Owl.</p>
+    </div>
+  </div>
+</div>
+<div class="col-container">
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/birdsOfPrey/birds-of-prey-peregrin-falcon.jpg" alt="Peregrine Falcon">
+    <div class="card-body">
+      <h2 class="card-title">Peregrine Falcon</h2>
+      <p class="card-text">Graphite on A3 of a Peregrine Falcon.</p>
+    </div>
+  </div>
+  <div class="col">
+    <img class="card-img-top img-fluid" src="/images/birdsOfPrey/commission-forever-living-logo.jpg" alt="Forever Living">
+    <div class="card-body">
+      <h2 class="card-title">Forever Living Logo</h2>
+      <p class="card-text">Graphite commission on A3 of a an Eagle with Aloe Leaf for Forever Living Products.</p>
+    </div>
+  </div>
+</div>
+<% include ./include/scripts %>
+        <% include ./include/footer %>
+</body>
+</html>

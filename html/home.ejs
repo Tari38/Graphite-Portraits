@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <body>
+        <% include ./include/nav %>
+
+<!-- MAIN PAGE CONTENT -->
+<h2>Welcome to Graphite Portraits</h2><p>Memories to Cherish Forever.</p>
+    <h1>Featured Gallery</h1>
+
+      <!-- slider carousel -->
+      <div class="row">
+        <div class="col-lg-12" id="slider">
+          <div class="col-lg-12" id="carousel-bounding-box">
+            <div id="myCarousel" class="carousel slide">
+              <!-- main slider carousel items -->
+              <div class="carousel-inner">
+                <div class="active item carousel-item" data-slide-number="0">
+                  <img src="images/dogs/commission-nero.jpg"
+                       class="img-fluid">
+                </div>
+                <div class="item carousel-item" data-slide-number="1">
+                  <img src="images/dogs/sabe-and-sash.jpg" class="img-fluid">
+                </div>
+                <div class="item carousel-item" data-slide-number="2">
+                  <img src="images\cats\commission-kittens.jpg"
+                       class="img-fluid">
+                </div>
+                <div class="item carousel-item" data-slide-number="3">
+                  <img src="images\bigCats\father-and-son.jpg"
+                       class="img-fluid">
+                </div>
+                <div class="item carousel-item" data-slide-number="4">
+                  <img src="images\wildAnimals\zebras.jpg"
+                       class="img-fluid">
+                </div>
+                <div class="item carousel-item" data-slide-number="5">
+                  <img src="images\dogs\English-Setter.png"
+                       class="img-fluid">
+                </div>
+                <div class="item carousel-item" data-slide-number="6">
+                  <img src="images\birdsOfPrey\commission-forever-living-logo.jpg"
+                       class="img-fluid">
+                </div>
+                <div class="item carousel-item" data-slide-number="7">
+                  <img src="images\britishBirds\british-birds-the-raven.jpg"
+                       class="img-fluid">
+                </div>
+              </div>
+              <a class="carousel-control left display-1" href="#myCarousel"
+                 data-slide="prev">‹</a>
+              <a class="carousel-control right display-1" href="#myCarousel"
+                 data-slide="next">›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/main slider carousel-->
+
+      <% include ./include/scripts %>
+        <% include ./include/footer %>
+  </body>
+  </html>

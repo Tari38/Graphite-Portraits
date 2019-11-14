@@ -4,40 +4,97 @@
     <body>
         <% include ./include/nav %>
 
-        <div class="contact1">
-          <div class="container-contact1">
-			      <div class="contact-pic">
-				      <img src="images/send-mail.png" alt="IMG">
-			      </div>
+<div class="contact-container">
+  <div>
+      <h2>Art Request</h2><br>
+      <h4>Please get in touch with me via the form provided. </h4>
+  </div>
+  <div class="contact-pic">
+		  <img src="images/send-mail.png" alt="IMG">
+  </div>
 
-            <form action="contact/send" method="post" class="col-12 col-md-8 contactForm validate-form" enctype="multipart/form-data">
-                  <span class="contact1-form-title">Contact Me</span>
+  <div>
+    <iframe
+      id="JotFormIFrame-93162826827364"
+      title="Contact Me for Graphite Portraits"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotformeu.com/93162826827364"
+      frameborder="0"
+      style="
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-93162826827364");
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+  </div>
 
-                    <div class="wrap-form-group validate-input" data-validate="Name is required">
-                        <input type="text" class="input-control" id="name" placeholder="name">
-                        <span class="shadow-input"></span>
-                    </div>
-                    <div class="wrap-form-group validate-input" data-validate="Valid email is required: example@abc.def">
-                        <input type="email" class="input-control" id="email" placeholder="email">
-                        <span class="shadow-input"></span>
-                    </div>
-                    <div class="wrap-form-group validate-input" data-validate="Message is required">
-                        <textarea class="input-control" id="enquiry" placeholder="enquiry" rows="6"></textarea>
-                        <span class="shadow-input"></span>
-                    </div>
-                    <div class="wrap-form-group validate-input" data-validate="Image File is required">
-                      <input type="file" id="files" name="files">
-                    </div>
-                    <div class="container-btn-form float-right"> <!-- align button to the right -->
-                        <button type="submit" class="btn btn-primary btn-lg btn-form" id="submit">Submit</button><input type="reset">
-                    </div>
-                </form>
-          </div>
-          <div class="row">
-                <p></p>
-          </div>
-        </div>
-        <% include ./include/scripts %>
-        <% include ./include/footer %>
+</div>
+
+    <% include ./include/scripts %>
+    <% include ./include/footer %>
     </body>
   </html>

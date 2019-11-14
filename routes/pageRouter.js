@@ -64,19 +64,8 @@ router.get("/prices", function(req, res) {
 
 //contact page
 router.get("/contact", function(req, res) {
-  console.log("Request for contact form recieved");
-  res.render("contactForm");
+  console.log("Request for contact page recieved");
+  res.render("contact");
 });
-
-// // contact pages send and error
-// router.get("/contact_send", function(req, res) {
-//   console.log("Request for contact send page recieved");
-//   res.render("contact_send");
-// });
-//
-// router.get("/contact_error", function(req, res) {
-//   console.log("Request for contact error page recieved");
-//   res.render("/contact_error");
-// });
 
 module.exports = router;
